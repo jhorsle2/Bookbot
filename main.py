@@ -8,7 +8,7 @@ def main():
     book_path = 'books/frankenstein.txt'
     text = get_book_text(book_path)
     words = word_count(text)
-    print(words)
+    print(f'{words} words found in the document')
 
 
 def get_book_text(path):
