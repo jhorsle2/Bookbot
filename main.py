@@ -2,7 +2,7 @@ import os
 
 os.chdir(r'C:\Python_Projects\Bookbot')
 
-from stats import word_count,character_count
+from stats import word_count,character_count,sort_on
 
 
 def main():
@@ -12,6 +12,7 @@ def main():
     characters = character_count(text)
     print(f'{words} words found in the document')
     print(characters)
+    print(characters.items())
 
 
 def get_book_text(path):
